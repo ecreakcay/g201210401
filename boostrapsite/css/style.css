@@ -1,0 +1,73 @@
+.resimSlider{
+    height: 500px;
+}
+
+body{
+    padding-top: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hakkinda{
+    background-color: #f2f2f2;
+}
+
+.ayrac{
+    border: none;
+    border-top: 3px solid #343a40;
+    max-width: 250px;
+    margin: 25px auto;
+} 
+
+.ibeyaz{
+    color:3343a40;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    border: 10px solid #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+.igri{
+    color:3343a40;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    border: 10px solid #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+.galeri{
+    background-color: #f2f2f2;
+}
+
+.figure:hover{
+    opacity: 0.8;
+}
+
+
+.ozgecmis{
+    background-color: #f2f2f2;
+}
+
+.ilgilendiklerim{
+    background-color: #f2f2f2;
+}
+
+.sehrim{
+    background-color: #f2f2f2;
+}
+.mirasimiz{
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
