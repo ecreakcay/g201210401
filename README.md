@@ -12,6 +12,7 @@ Nasıl yapılacağını izlemek isterseniz sizin için bir [link](https://www.yo
 
 ## Projeme katkı sağlamak isterseniz
 Sağ üstte bulunan **Fork** tuşu ile projeyi kendi hesabınıza ekledikten sonra, GitHub masaüstü uygulamasından kendi bilgisayarınıza *clone* edebilir, kopyasını indirebilirsiniz. <br>
+<br>
 Nasıl yapılacağını izlemek isterseniz sizin için bir [link](https://www.youtube.com/watch?v=HM8cC6hagHM) bırakıyorum.
 
 ## Proje geliştirilirken;
