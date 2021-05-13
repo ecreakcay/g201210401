@@ -9,7 +9,7 @@
 
 body{
     font-family: sans-serif;
-    background: #3498D8;
+    background: black;
     padding: 100px;
 }
 
@@ -47,7 +47,7 @@ input{
     transition: border .5s;
 }
 input:focus{
-    border: 2px solid #3498DB;
+    border: 2px solid black;
     box-shadow: none;
 }
 .btn{
