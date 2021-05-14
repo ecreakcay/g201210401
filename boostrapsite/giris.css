@@ -1,41 +1,43 @@
-*{
+* {
     box-sizing: border-box;
     text-decoration: none;
 }
 
-*:focus{
+*:focus {
     outline: none;
 }
 
-body{
+body {
     font-family: sans-serif;
     background: black;
     padding: 100px;
 }
 
-.login{
+.login {
     margin: 20px auto;
     width: 300px;
 }
 
-.login-screen{
+.login-screen {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
 }
 
-.app-title{
+.app-title {
     text-align: center;
     color: #777;
 }
 
-.login-form{
+.login-form {
     text-align: center;
 }
-.controld-group{
+
+.controld-group {
     margin-bottom: 10px;
 }
-input{
+
+input {
     text-align: center;
     background-color: #ECF0F1;
     border: 2px solid transparent;
@@ -46,11 +48,14 @@ input{
     width: 200px;
     transition: border .5s;
 }
-input:focus{
+
+input:focus {
     border: 2px solid black;
     box-shadow: none;
 }
-.btn{
+
+.btn {
+    text-align: center;
     border: 2px solid transparent;
     background: #3498DB;
     color: #ffffff;
@@ -67,30 +72,6 @@ input:focus{
     margin-top: 5px;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #2980B9;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -41,11 +41,11 @@ require 'baglan.php';
                         <label class="login-field-icon fui-user" for="login-pass"></label>
                     </div>
                 </div>
-                
+
                 <button href="kayit.php" name="kayit" class="btn btn-primary btn-large btn-block">Kayıt Ol</button>
 
             </form>
-            <a href="index.php"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a>
+            <a href="giris.html"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a>
         </div>
     </div>
 

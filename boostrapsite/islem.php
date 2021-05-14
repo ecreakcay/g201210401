@@ -26,7 +26,7 @@ if(isset($_POST['kayit'])){
         ]);
         if($ekle){
             echo "Kayıt başarıla gerçekleştirildi, yönlendiriliyorsunuz..";
-            header('Refresh:2; index.php');
+            header('Refresh:2; giris.html');
             
         }else{
             echo "Hata, tekrar kontrol ediniz..";
@@ -54,7 +54,7 @@ if(isset($_POST['giris'])){
         $say = $kullanici_sor-> rowCount();
         if($say==1){
             $_SESSION['username']=$username;
-            echo "Başarıyla giriş yaptınız, yönlendiriliyorsunuz..";
+            echo "Hoş geldiniz G201210401, yönlendiriliyorsunuz..";
             header('Refresh:2; index.html');
             
         }else{

@@ -8,7 +8,7 @@ body {
 }
 
 .hakkinda {
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 .ayrac {
@@ -27,17 +27,53 @@ body {
     background-color: #f2f2f2;
 }
 
+.hk {
+    color: 3343a40;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    border: 10px solid white;
+    background-color: white;
+}
+
 .igri {
     color: 3343a40;
     position: relative;
     top: -55px;
     font-size: 40px;
-    border: 10px solid #f2f2f2;
-    background-color: #f2f2f2;
+    border: 10px solid wheat;
+    background-color: wheat;
+}
+
+.ilg {
+    color: 3343a40;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    border: 10px solid lightsalmon;
+    background-color: lightsalmon;
+}
+
+.sehir {
+    color: 3343a40;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    border: 10px solid lighblue;
+    background-color: lightblue;
+}
+
+.miras {
+    color: 3343a40;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    border: 10px solid papayawhip;
+    background-color: papayawhip;
 }
 
 .galeri {
-    background-color: #f2f2f2;
+    background-color: wheat;
 }
 
 .figure:hover {
@@ -46,19 +82,19 @@ body {
 
 
 .ozgecmis {
-    background-color: #f2f2f2;
+    background-color: wheat;
 }
 
 .ilgilendiklerim {
-    background-color: #f2f2f2;
+    background-color: lightsalmon;
 }
 
 .sehrim {
-    background-color: #f2f2f2;
+    background-color: lightblue;
 }
 
 .mirasimiz {
-    background-color: #f2f2f2;
+    background-color: papayawhip;
 }
 
 form {
@@ -135,31 +171,29 @@ textarea {
 
 
 iframe {
-    margin-top: 10px;
+    margin-top: 1px;
     position: relative;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 10px;
 }
 
 .all-ozgecmis {
-  margin: 0;
-  padding: 2px;
-  background-color: darkgray;
+    margin: 0;
+    padding: 5px;
+    background-color: darkseagreen;
 }
 
-.all-ozgecmis > h1, .ozgecmis {
-  margin: 15px;
-  padding: 10px;
+.all-ozgecmis > h1,
+.ozgecmis {
+    margin: 50px;
+    padding: 3px;
 }
 
 .ozgecmis {
-  background: lavender;
+    background: wheat;
 }
 
-.ozgecmis >  p {
-  margin: 10px;
-  font-size: 90%;
+.ozgecmis > p {
+    margin: 20px;
+    font-size: 90%;
 }
-
-
-
