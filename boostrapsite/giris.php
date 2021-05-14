@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
     <div class="login">
         <div class="login-screen">
             <div class="app-title">
@@ -28,17 +26,11 @@
                         <label class="login-field-icon fui-user" for="login-pass"></label>
                     </div>
                 </div>
-                <button href="giris.html" name="giris" class="btn btn-primary btn-large btn-block">Giriş Yap</button>
+                <button href="giris.php" name="giris" class="btn btn-primary btn-large btn-block">Giriş Yap</button>
             </form>
             <a href="kayit.php"><button class="btn btn-primary btn-large btn-block">Kayıt Ol</button></a>
-            <a href="anasayfa.html">
-                <buton class="btn btn-primary btn-large btn-block">Ana Sayfa</buton>
-            </a>
+            <a href="index.html"><buton class="btn btn-primary btn-large btn-block">Ana Sayfa</buton></a>
         </div>
-
     </div>
-
-
 </body>
-
 </html>

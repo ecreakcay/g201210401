@@ -4,10 +4,6 @@ require 'baglan.php';
 
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="">
 
@@ -45,7 +41,8 @@ require 'baglan.php';
                 <button href="kayit.php" name="kayit" class="btn btn-primary btn-large btn-block">Kayıt Ol</button>
 
             </form>
-            <a href="giris.html"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a>
+            <a href="giris.php"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a>
+            <a href="index.html"><buton class="btn btn-primary btn-large btn-block">Ana Sayfa</buton></a>
         </div>
     </div>
 
