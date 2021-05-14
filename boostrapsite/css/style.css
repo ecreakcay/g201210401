@@ -135,8 +135,31 @@ textarea {
 
 
 iframe {
-    margin-top: 300px;
+    margin-top: 10px;
     position: relative;
-    margin-left: 100px;
-    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
+
+.all-ozgecmis {
+  margin: 0;
+  padding: 2px;
+  background-color: darkgray;
+}
+
+.all-ozgecmis > h1, .ozgecmis {
+  margin: 15px;
+  padding: 10px;
+}
+
+.ozgecmis {
+  background: lavender;
+}
+
+.ozgecmis >  p {
+  margin: 10px;
+  font-size: 90%;
+}
+
+
+

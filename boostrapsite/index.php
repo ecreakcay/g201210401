@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giriş Formu</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="giris.css">
+
 </head>
 
 <body>
-
+    
+    
     <div class="login">
         <div class="login-screen">
             <div class="app-title">
@@ -31,7 +33,6 @@
             <a href="kayit.php"><button class="btn btn-primary btn-large btn-block">Kayıt Ol</button></a>
         </div>
     </div>
-
 
 
 </body>
