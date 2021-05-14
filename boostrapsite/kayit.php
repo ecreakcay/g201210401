@@ -24,22 +24,20 @@ require 'baglan.php';
             <form action="islem.php" method="post">
                 <div class="login-form">
                     <div class="control-group">
-                        <input type="text" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name">
+                        <input type="text" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name required">
                         <label class="login-field-icon fui-user" for="login-name"></label>
                     </div>
                     <div class="control-group">
-                        <input type="password" name="password" class="login-field" placeholder="Şifre" id="login-pass">
+                        <input type="password" name="password" class="login-field" placeholder="Şifre" id="login-pass required">
                         <label class="login-field-icon fui-user" for="login-pass"></label>
                     </div>
 
                     <div class="control-group">
-                        <input type="password" name="password_again" class="login-field" placeholder="Tekrar Şifre" id="login-pass">
+                        <input type="password" name="password_again" class="login-field" placeholder="Tekrar Şifre" id="login-pass required">
                         <label class="login-field-icon fui-user" for="login-pass"></label>
                     </div>
                 </div>
-
                 <button href="kayit.php" name="kayit" class="btn btn-primary btn-large btn-block">Kayıt Ol</button>
-
             </form>
             <a href="giris.php"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a>
             <a href="index.html"><buton class="btn btn-primary btn-large btn-block">Ana Sayfa</buton></a>

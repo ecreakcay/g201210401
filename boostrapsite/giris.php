@@ -18,11 +18,11 @@
             <form action="islem.php" method="post">
                 <div class="login-form">
                     <div class="control-group">
-                        <input type="text" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name">
+                        <input type="text" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name required">
                         <label class="login-field-icon fui-user" for="login-name"></label>
                     </div>
                     <div class="control-group">
-                        <input type="password" name="password" class="login-field" placeholder="Şifre" id="login-pass">
+                        <input type="password" name="password" class="login-field" placeholder="Şifre" id="login-pass required">
                         <label class="login-field-icon fui-user" for="login-pass"></label>
                     </div>
                 </div>
