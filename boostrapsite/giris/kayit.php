@@ -11,7 +11,7 @@ require 'baglan.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giriş Formu</title>
-    <link rel="stylesheet" type="text/css" href="giris.css">
+    <link rel="stylesheet" type="text/css" href="../css/giris.css">
 </head>
 
 <body>
@@ -21,10 +21,10 @@ require 'baglan.php';
             <div class="app-title">
                 <h1>Kayıt Ol</h1>
             </div>
-            <form action="http://localhost/brackets/g201210401/boostrapsite/islem.php" method="post">
+            <form action="http://localhost/brackets/g201210401/boostrapsite/giris/islem.php" method="post">
                 <div class="login-form">
                     <div class="control-group">
-                        <input type="text" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name required">
+                        <input type="email" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name required">
                         <label class="login-field-icon fui-user" for="login-name"></label>
                     </div>
                     <div class="control-group">
@@ -37,10 +37,10 @@ require 'baglan.php';
                         <label class="login-field-icon fui-user" for="login-pass"></label>
                     </div>
                 </div>
-                <button href="http://localhost/brackets/g201210401/boostrapsite/kayit.php" name="kayit" class="btn btn-primary btn-large btn-block">Kayıt Ol</button>
+                <button href="http://localhost/brackets/g201210401/boostrapsite/giris/kayit.php" name="kayit" class="btn btn-primary btn-large btn-block">Kayıt Ol</button>
             </form>
-            <a href="http://localhost/brackets/g201210401/boostrapsite/giris.php"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a>
-            <a href="index.html"><buton class="btn btn-primary btn-large btn-block">Ana Sayfa</buton></a>
+            <a href="http://localhost/brackets/g201210401/boostrapsite/giris/giris.php"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a>
+            <a href="http://localhost/brackets/g201210401/boostrapsite/index.html"><buton class="btn btn-primary btn-large btn-block">Ana Sayfa</buton></a>
         </div>
     </div>
 
