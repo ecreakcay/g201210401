@@ -15,20 +15,20 @@
             <div class="app-title">
                 <h1>Giriş Yap</h1>
             </div>
-            <form action="islem.php" method="post">
+            <form action="http://localhost/brackets/g201210401/boostrapsite/islem.php" method="post">
                 <div class="login-form">
                     <div class="control-group">
-                        <input type="text" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name required">
+                        <input type="text" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name ">
                         <label class="login-field-icon fui-user" for="login-name"></label>
                     </div>
                     <div class="control-group">
-                        <input type="password" name="password" class="login-field" placeholder="Şifre" id="login-pass required">
+                        <input type="password" name="password" class="login-field" placeholder="Şifre" id="login-pass ">
                         <label class="login-field-icon fui-user" for="login-pass"></label>
                     </div>
                 </div>
-                <button href="giris.php" name="giris" class="btn btn-primary btn-large btn-block">Giriş Yap</button>
+                <button href="http://localhost/brackets/g201210401/boostrapsite/giris.php" name="giris" class="btn btn-primary btn-large btn-block">Giriş Yap</button>
             </form>
-            <a href="kayit.php"><button class="btn btn-primary btn-large btn-block">Kayıt Ol</button></a>
+            <a href="http://localhost/brackets/g201210401/boostrapsite/kayit.php"><button class="btn btn-primary btn-large btn-block">Kayıt Ol</button></a>
             <a href="index.html"><buton class="btn btn-primary btn-large btn-block">Ana Sayfa</buton></a>
         </div>
     </div>

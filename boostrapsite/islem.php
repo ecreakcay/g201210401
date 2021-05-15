@@ -26,7 +26,7 @@ if(isset($_POST['kayit'])){
         ]);
         if($ekle){
             echo "Kayıt başarıla gerçekleştirildi, yönlendiriliyorsunuz..";
-            header('Refresh:2; giris.php');
+            header('Refresh:2; http://localhost/brackets/g201210401/boostrapsite/giris.php');
             
         }else{
             echo "Hata, tekrar kontrol ediniz..";
@@ -53,7 +53,7 @@ if(isset($_POST['giris'])){
         $say = $kullanici_sor-> rowCount();
         if($say==1){
             $_SESSION['username']=$username;
-            echo "Hoş geldiniz G201210401, yönlendiriliyorsunuz..";
+            echo "Hoş geldiniz $username, yönlendiriliyorsunuz..";
             header('Refresh:2; index.html');
             
         }else{
