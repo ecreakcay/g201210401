@@ -2,173 +2,189 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
 
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta name="viewport" content="width-device-widht, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
 
 
-	<link rel="stylesheet" href="../yazi/yazi.html">
-	<link rel="stylesheet" href="../css/style.css">
-	<script src="https://kit.fontawesome.com/323215b143.js" crossorigin="anonymous"></script>
-
-
-	<title>İletişim Formu</title>
+    <title>İzmit</title>
 </head>
 
 <body>
 
-	<!---MENÜ KISMI BAŞLANGIÇ--->
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Hoş Geldiniz</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="hakkinda.html">Hakkında</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="ilgilendiklerim.html">İlgilendiklerim</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="sehrim.html">Şehrim</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="mirasimiz.html">Mirasımız</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="http://localhost/brackets/g201210401/boostrapsite/giris/giris.php">Giriş</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="http://localhost/brackets/g201210401/boostrapsite/iletisim/iletisim.html">İletişim</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!---MENÜ KISMI BİTİŞ--->
+    <!---MENÜ KISMI BAŞLANGIÇ--->
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hoş Geldiniz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../hakkinda.html">Hakkında</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ozgecmis.html">Özgeçmiş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ilgilendiklerim.html">İlgilendiklerim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sehrim.html">Şehrim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../mirasimiz.html">Mirasımız</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="http://localhost/brackets/g201210401/boostrapsite/giris/giris.php">Giriş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="http://localhost/brackets/g201210401/boostrapsite/iletisim/iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---MENÜ KISMI BİTİŞ--->
 
-	<!---iletişim BAŞLANGIÇ--->
-
-
-	<form action="" method="post" enctype="multipart/form-data">
-
-
-		<fieldset>
-			<hr class="ayrac"><i class="fas fa-dove ibeyaz"></i>
-			<legend>Kullanıcı Bilgileri</legend>
-			<table border="2" class="center">
-				<tr>
-					<td>Ad</td>
-					<td><input type="text" name="ad" id="ad" placeholder="Adınızı Giriniz.." required></td>
-				</tr>
-				<tr>
-					<td>Soyad</td>
-					<td><input type="text" name="soyad" id="soyad" placeholder="Soyadınızı Giriniz.." required></td>
-				</tr>
-				<tr>
-					<td>Yaş</td>
-					<td>
-						<input type="number" min="10" max="100" step="1" placeholder="Yaş">
-					</td>
-				</tr>
-				<tr>
-					<td>Mail</td>
-					<td>
-						<input type="email" id="eposta" name="eposta" placeholder="E-posta Giriniz.." required>
-					</td>
-				</tr>
-				<tr>
-					<td>Fotoğraf Ekle</td>
-					<td>
-						<input type="file" id="dosya" name="dosya">
-					</td>
-				</tr>
-
-
-			</table>
-		</fieldset>
-		<legend>İletişim</legend>
-		<table border="2" class="center">
-
-			<tr>
-				<td>Şikayet Konusu</td>
-				<td><input type="text" name="konu" id="konu" placeholder="Konuyu Giriniz.." required></td>
-			</tr>
-			<tr>
-				<td>Şikayet Tarihi</td>
-				<td>
-					<input type="date" id="tarih" name="tarih" value="2021-18-05">
-				</td>
-			</tr>
-
-			<tr>
-				<td>Şikayet Hakkında Geri Dönüş</td>
-				<td>
-					<label>
-						- İstiyorum<input type="radio" id="sec1" name="sec" value="1">
-					</label><br>
-					<label>
-						- İstemiyorum<input type="radio" id="sec2" name="sec" value="1">
-					</label>
-				</td>
-			</tr><br>
-
-			<tr>
-				<td>İletişim Seçeneği</td>
-				<td>
-					<select name="tur" id="tur">
-						<option value="1" selected>Telefon</option>
-						<option value="2">Mail</option>
-						<option value="3">Sms</option>
-					</select>
-				</td>
-			</tr>
-
-			<tr>
-				<td>Şikayet</td>
-				<td>
-					<textarea name="sikayet" id="sikayet" cols="30" rows="5"></textarea>
-				</td>
-			</tr>
-
-
-		</table><br>
-
-		<input type="checkbox" id="onay" name="onay" value="1" required>
-		<label for="onay">Girilen bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum.</label><br>
-		<input type="submit" id="btnK" name="btnK" value="Formu Kaydet">
-		<input type="reset" id="btnT" name="btnT" value="Formu Temizle">
-
-	</form>
-
-
-	<!--- iletişim bitiş--->
+    <!---iletişim KISMI BAŞLANGIÇ--->
 
 
 
-	<!-- Optional JavaScript; choose one of the two! -->
 
-	<!-- Option 1: Bootstrap Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <form action="" id="form1">
+        <h1 class="p-5 text-center">İletişim Formu</h1>
 
-	<!-- Option 2: Separate Popper and Bootstrap JS -->
-	<!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <label for="name" class="form-label">Ad</label>
+        <input type="text" class="form-control" id="name" placeholder="Adınızı giriniz.."><br>
+
+        <label for="surname" class="form-label">Soyad</label>
+        <input type="text" class="form-control" id="surname" placeholder="Soyadınızı giriniz.."><br>
+
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="isim@gmail.com"><br>
+
+        
+        <label class="form-check-label" for="kadin">Cinsiyet Seçiniz</label><br>
+
+        <input class="form-check-input" type="radio" name="cinsiyet" id="kadin" value="option1" checked>
+        <label class="form-check-label" for="kadin">Kadın</label><br>
+
+        <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="option2">
+        <label class="form-check-label" for="erkek">Erkek</label><br><br>
+        
+        
+        <label class="input-group-text" for="sehir">Şehir</label>
+        <select class="form-select" id="sehir">
+            <option value="1">Kocaeli</option>
+            <option value="2">Bursa</option>
+            <option value="3">İstanbul</option>
+            <option value="4">Diğer</option>
+        </select><br>
+
+        <label for="formFile" class="form-label">Şikayet Ekran Görüntüsü (İsteğe Bağlı)</label>
+        <input class="form-control" type="file" id="formFile"><br>
+
+        <label for="mesaj" class="form-label">Mesaj</label><br>
+        <textarea class="form-control" id="mesaj" rows="3" placeholder="Mesajınızı giriniz.."></textarea><br>
+
+        <input class="form-check-input" type="checkbox" id="onay" checked disabled>
+        <label class="form-check-label" for="onay">Girilen bilgilerin doğruluğunu onaylıyorum.</label><br><br>
+
+        <button  id="btn" type="submit" href="" name="gonder" class="btn btn-dark btn-lg" onclick="formkontrol()" >Gönder</button>
+        <button type="reset" value="Temizle" class="btn btn-dark btn-lg">Temizle</button>
+
+    </form>
+
+
+    <script>
+        function formkontrol() {
+            adi = document.getElementById("name").value;
+            soyadi = document.getElementById("surname").value;
+            sikayet = document.getElementById("mesaj").value;
+            
+            mail = document.getElementById("email").value;
+
+            if (adi == "") {
+                alert("Lütfen ad alanını doldurunuz!");
+            }
+            if (soyadi == "") {
+                alert("Lütfen soyad alanını doldurunuz!");
+            }
+            if (sikayet == "") {
+                alert("Lütfen mesaj alanını doldurunuz!");
+            }
+            if (mail == "") {
+                alert("Lütfen mail alanını doldurunuz!");
+            }else{
+                alert("Gönderim başarılı!");
+            }
+
+        }
+
+        function mailKontrol(frm){
+            var email=frm.email.value;
+            var atpos=email.indexof("@");
+            var dotpos=email.lastindexof(".");
+
+            if(atpos<1 || dotpos<atpos+2 ||dotpos+2 >=email.lenght){
+                alert("Geçerli bir e-mail adresi giriniz!");
+                return false;
+            }return true;
+        }
+
+    </script>
+
+    <!---iletişim KISMI bitiş--->
+
+
+    <!---FOOTER BAŞLANGIÇ--->
+
+    <div class="bg-dark text-light text-center">
+        <p class="align-middle p-5 mb-0">
+            <span>Tüm Hakları Saklıdır &copy; | 2021</span> <br>
+            <span>Designed by <b>ecreaynurakcay</b> </span>
+        </p>
+    </div>
+
+    <!---FOOTER BİTİŞ--->
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
 </body>
 
