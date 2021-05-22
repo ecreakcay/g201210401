@@ -26,11 +26,11 @@ if(isset($_POST['kayit'])){
         ]);
         if($ekle){
             echo "Kayıt başarıla gerçekleştirildi, yönlendiriliyorsunuz..";
-            header('Refresh:2; http://localhost/brackets/g201210401/boostrapsite/giris/giris.php');
+            header('Refresh:2; giris/giris.php');
             
         }else{
             echo "Hata, tekrar kontrol ediniz..";
-			header('Refresh:2; http://localhost/brackets/g201210401/boostrapsite/giris/kayit.php');
+			header('Refresh:2; giris/kayit.php');
         }
     }
 }
@@ -55,11 +55,11 @@ if(isset($_POST['giris'])){
         if($say==1){
             $_SESSION['username']=$username;
             echo "Hoş geldiniz $username, yönlendiriliyorsunuz..";
-            header('Refresh:2; http://localhost/brackets/g201210401/boostrapsite/index.html');
+            header('Refresh:2; ../index.html');
             
         }else{
             echo "Hata, tekrar kontrol ediniz..";
-			header('Refresh:2; http://localhost/brackets/g201210401/boostrapsite/giris/giris.php');
+			header('Refresh:2; giris/giris.php');
 			
         }
     }

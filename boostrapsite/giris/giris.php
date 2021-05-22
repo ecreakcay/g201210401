@@ -15,7 +15,7 @@
 			<div class="app-title">
 				<h1>Giriş Yap</h1>
 			</div>
-			<form action="http://localhost/brackets/g201210401/boostrapsite/giris/islem.php" method="post">
+			<form action="giris/islem.php" method="post">
 				<div class="login-form">
 					<div class="control-group">
 						<input type="email" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name ">
@@ -26,10 +26,10 @@
 						<label class="login-field-icon fui-user" for="login-pass"></label>
 					</div>
 				</div>
-				<button href="http://localhost/brackets/g201210401/boostrapsite/giris/giris.php" name="giris" class="btn btn-primary btn-large btn-block">Giriş Yap</button>
+				<button href="giris/giris.php" name="giris" class="btn btn-primary btn-large btn-block">Giriş Yap</button>
 			</form>
-			<a href="http://localhost/brackets/g201210401/boostrapsite/giris/kayit.php"><button class="btn btn-primary btn-large btn-block">Kayıt Ol</button></a>
-			<a href="http://localhost/brackets/g201210401/boostrapsite/index.html"><button class="btn btn-primary btn-large btn-block">Ana Sayfa</button></a>
+			<a href="giris/kayit.php"><button class="btn btn-primary btn-large btn-block">Kayıt Ol</button></a>
+			<a href="../index.html"><button class="btn btn-primary btn-large btn-block">Ana Sayfa</button></a>
 		</div>
 	</div>
 </body>
