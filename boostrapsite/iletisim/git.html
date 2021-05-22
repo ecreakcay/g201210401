@@ -64,88 +64,105 @@
     <!---MENÜ KISMI BİTİŞ--->
 
     <!---iletişim KISMI BAŞLANGIÇ--->
+    <h1 class="heading">BAŞARILI!</h1>
+	
+	<main>
 
-    <form action="git.html" id="form1">
-        <h1 class="p-5 text-center">İletişim Formu</h1>
-
-        <label for="name" class="form-label">Ad</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Adınızı giriniz.."><br>
-
-        <label for="surname" class="form-label">Soyad</label>
-        <input type="text" class="form-control" id="surname" name="surname" placeholder="Soyadınızı giriniz.."><br>
-
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="isim@gmail.com"><br>
-
-        
-        <label class="form-check-label" for="kadin">Cinsiyet Seçiniz</label><br>
-
-        <input class="form-check-input" type="radio" name="cinsiyet" id="kadin" value="KADIN" checked>
-        <label class="form-check-label" for="kadin">Kadın</label><br>
-
-        <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="Erkek">
-        <label class="form-check-label" for="erkek">Erkek</label><br><br>
-        
-        
-        <label class="input-group-text" for="sehir">Şehir</label>
-        <select class="form-select" name="sehir" id="sehir">
-            <option value="1">Kocaeli</option>
-            <option value="2">Bursa</option>
-            <option value="3">İstanbul</option>
-            <option value="4">Diğer</option>
-        </select><br>
-
-        <label for="formFile" class="form-label">Şikayet Ekran Görüntüsü (İsteğe Bağlı)</label>
-        <input class="form-control" type="file" id="formFile"><br>
-
-        <label for="mesaj"  class="form-label">Mesaj</label><br>
-        <textarea class="form-control" name="mesaj" id="mesaj" rows="3" placeholder="Mesajınızı giriniz.."></textarea><br>
-
-        <input class="form-check-input" type="checkbox" id="onay" checked disabled>
-        <label class="form-check-label" for="onay">Girilen bilgilerin doğruluğunu onaylıyorum.</label><br><br>
-
-        <button  id="btn" type="submit" href="" name="gonder" class="btn btn-dark btn-lg" onclick="formkontrol()" >Gönder</button>
-        <button type="reset" value="Temizle" class="btn btn-dark btn-lg">Temizle</button>
-
-    </form>
+		<div class="container ">
+			
+			<div class="row">
 
 
-    <script>//js kontrolleri
-        function formkontrol() {
-            adi = document.getElementById("name").value;
-            soyadi = document.getElementById("surname").value;
-            sikayet = document.getElementById("mesaj").value;
-            
-            mail = document.getElementById("email").value;
 
-            if (adi == "") {
-                alert("Lütfen ad alanını doldurunuz!");
-            }
-            if (soyadi == "") {
-                alert("Lütfen soyad alanını doldurunuz!");
-            }
-            if (sikayet == "") {
-                alert("Lütfen mesaj alanını doldurunuz!");
-            }
-            if (mail == "") {
-                alert("Lütfen mail alanını doldurunuz!");
-            }
 
-        }
+				<script type="text/javascript">
 
-        function mailKontrol(frm){
-            var email=frm.email.value;
-            var atpos=email.indexof("@");
-            var dotpos=email.lastindexof(".");
+					function getParameterByName(name, url) 
+					{
+		            	if (!url) url = window.location.href;
+    		       		name = name.replace(/[\[\]]/g, '\\$&');
+        		    	var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            		    	results = regex.exec(url);
+           				if (!results) return null;
+           				if (!results[2]) return '';
+           				return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        			}
 
-            if(atpos<1 || dotpos<atpos+2 ||dotpos+2 >=email.lenght){
-                alert("Geçerli bir e-mail adresi giriniz!");
-                return false;
-            }return true;
-        }
+  				    var name = getParameterByName('name');
+                    var surname = getParameterByName('surname');   
+                    var cinsiyet = getParameterByName('cinsiyet');
+                    var sehir = getParameterByName('sehir');
+  				    var email = getParameterByName('email');
+  				    var mesaj = getParameterByName('mesaj');
 
-    </script>
+				</script>
 
+				<table class="table">
+						<thead class="table-info">
+							<tr>
+								<th>Başarılı Bir şekilde Gönderdiniz :)</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>İsminiz</td>
+								<td>
+									<script>document.write(name);
+									</script>
+								</td>
+							</tr>
+                            
+                            <tr>
+								<td>Soyisminiz</td>
+								<td>
+									<script>document.write(surname);
+									</script>
+								</td>
+							</tr>
+
+							<tr>
+								<td>E-Mail</td>
+								<td>
+									<script>document.write(email);
+									</script>
+								</td>
+							</tr>
+	
+                            <tr>
+								<td>Şehriniz</td>
+								<td>
+									<script>document.write(sehir);
+									</script>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Cinsiyetiniz</td>
+								<td>
+									<script>document.write(cinsiyet);
+									</script>
+								</td>
+							</tr>
+
+                            <tr>
+								<td>Mesajınız</td>
+								<td>
+									<script>document.write(mesaj);
+									</script>
+								</td>
+							</tr>
+	
+						</tbody>
+					
+				</table>	
+
+
+			</div>
+
+		</div>
+
+	</main>
     <!---iletişim KISMI bitiş--->
 
 

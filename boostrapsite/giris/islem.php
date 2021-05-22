@@ -26,11 +26,11 @@ if(isset($_POST['kayit'])){
         ]);
         if($ekle){
             echo "Kayıt başarıla gerçekleştirildi, yönlendiriliyorsunuz..";
-            header('Refresh:2; giris/giris.php');
+            header('Refresh:2; giris.php');
             
         }else{
             echo "Hata, tekrar kontrol ediniz..";
-			header('Refresh:2; giris/kayit.php');
+			header('Refresh:2; kayit.php');
         }
     }
 }
@@ -59,7 +59,7 @@ if(isset($_POST['giris'])){
             
         }else{
             echo "Hata, tekrar kontrol ediniz..";
-			header('Refresh:2; giris/giris.php');
+			header('Refresh:2; giris.php');
 			
         }
     }

@@ -21,7 +21,7 @@ require 'baglan.php';
             <div class="app-title">
                 <h1>Kayıt Ol</h1>
             </div>
-            <form action="giris/islem.php" method="post">
+            <form action="islem.php" method="post">
                 <div class="login-form">
                     <div class="control-group">
                         <input type="email" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name required">
@@ -37,9 +37,9 @@ require 'baglan.php';
                         <label class="login-field-icon fui-user" for="login-pass"></label>
                     </div>
                 </div>
-                <button href="giris/kayit.php" name="kayit" class="btn btn-primary btn-large btn-block">Kayıt Ol</button>
+                <button href="kayit.php" name="kayit" class="btn btn-primary btn-large btn-block">Kayıt Ol</button>
             </form>
-            <a href="giris/giris.php"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a>
+            <a href="giris.php"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a>
             <a href="../index.html"><buton class="btn btn-primary btn-large btn-block">Ana Sayfa</buton></a>
         </div>
     </div>
