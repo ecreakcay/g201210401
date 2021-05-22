@@ -64,87 +64,112 @@
     <!---MENÜ KISMI BİTİŞ--->
 
     <!---iletişim KISMI BAŞLANGIÇ--->
+<br>
+<br>
+<br>
+<br>
 
-    <form action="git.html" id="form1">
-        <h1 class="p-5 text-center">İletişim Formu</h1>
+	<main>
 
-        <label for="name" class="form-label">Ad</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Adınızı giriniz.."><br>
+		<div class="container">
+			
+			<form action="git.html" name="Form" onsubmit="return control()">
 
-        <label for="surname" class="form-label">Soyad</label>
-        <input type="text" class="form-control" id="surname" name="surname" placeholder="Soyadınızı giriniz.."><br>
+				<div class="form-group">
+					<label for="name">İsim</label>
+					<input type="text" id="name" name="name" class="form-control" placeholder="İsminizi Girin">							
+					<small class="form-text text-muted">Zorunlu alan</small>
+				</div>
 
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="isim@gmail.com"><br>
+                <div class="form-group">
+					<label for="surname">İsim</label>
+					<input type="text" id="surname" name="surname" class="form-control" placeholder="Soyisminizi Girin">							
+					<small class="form-text text-muted">Zorunlu alan</small>
+				</div>
 
-        
-        <label class="form-check-label" for="kadin">Cinsiyet Seçiniz</label><br>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" class="form-control" placeholder="Emailinizi girin.">
+					<small class="form-text text-muted">Zorunlu alan</small>
+				</div>
 
-        <input class="form-check-input" type="radio" name="cinsiyet" id="kadin" value="KADIN" checked>
-        <label class="form-check-label" for="kadin">Kadın</label><br>
+                <div class="form-group">
+                    <label class="form-check-label" for="kadin">Cinsiyet Seçiniz</label><br>
 
-        <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="Erkek">
-        <label class="form-check-label" for="erkek">Erkek</label><br><br>
-        
-        
-        <label class="input-group-text" for="sehir">Şehir</label>
-        <select class="form-select" name="sehir" id="sehir">
-            <option value="1">Kocaeli</option>
-            <option value="2">Bursa</option>
-            <option value="3">İstanbul</option>
-            <option value="4">Diğer</option>
-        </select><br>
-
-        <label for="formFile" class="form-label">Şikayet Ekran Görüntüsü (İsteğe Bağlı)</label>
-        <input class="form-control" type="file" id="formFile"><br>
-
-        <label for="mesaj"  class="form-label">Mesaj</label><br>
-        <textarea class="form-control" name="mesaj" id="mesaj" rows="3" placeholder="Mesajınızı giriniz.."></textarea><br>
-
-        <input class="form-check-input" type="checkbox" id="onay" checked disabled>
-        <label class="form-check-label" for="onay">Girilen bilgilerin doğruluğunu onaylıyorum.</label><br><br>
-
-        <button  id="btn" type="submit" href="" name="gonder" class="btn btn-dark btn-lg" onclick="formkontrol()" >Gönder</button>
-        <button type="reset" value="Temizle" class="btn btn-dark btn-lg">Temizle</button>
-
-    </form>
-
-
-    <script>//js kontrolleri
-        function formkontrol() {
-            adi = document.getElementById("name").value;
-            soyadi = document.getElementById("surname").value;
-            sikayet = document.getElementById("mesaj").value;
+                    <input class="form-check-input" type="radio" name="cinsiyet" id="kadin" value="KADIN" checked>
+                    <label class="form-check-label" for="kadin">Kadın</label><br>
             
-            mail = document.getElementById("email").value;
+                    <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="Erkek">
+                    <label class="form-check-label" for="erkek">Erkek</label><br><br>
+                    
+                    
+                    <label class="input-group-text" for="sehir">Şehir</label>
+                    <select class="form-select" name="sehir" id="sehir">
+                        <option value="1">Kocaeli</option>
+                        <option value="2">Bursa</option>
+                        <option value="3">İstanbul</option>
+                        <option value="4">Diğer</option>
+                    </select><br>
+            
+                    <label for="formFile" class="form-label">Şikayet Ekran Görüntüsü (İsteğe Bağlı)</label>
+                    <input class="form-control" type="file" id="formFile"><br>
+                </div>
 
-            if (adi == "") {
-                alert("Lütfen ad alanını doldurunuz!");
-            }
-            if (soyadi == "") {
-                alert("Lütfen soyad alanını doldurunuz!");
-            }
-            if (sikayet == "") {
-                alert("Lütfen mesaj alanını doldurunuz!");
-            }
-            if (mail == "") {
-                alert("Lütfen mail alanını doldurunuz!");
-            }
 
+				<div class="form-group">
+					<label for="message">Mesaj</label>
+					<textarea name="mesaj" id="mesaj"  rows="5" class="form-control"></textarea>
+				</div>
+
+				<button class="btn btn-info" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
+
+				<button class="btn btn btn-info" type="submit" id="sub">Gönder</button>
+
+				<br><br><br>
+
+			</form>
+
+		</div>
+
+	</main>
+
+
+   <!-- JAVASCRIPT -->
+   <script>
+    function control()
+    {
+        var x = document.forms["Form"]["name"].value;
+        if (x == "") 
+        {
+            alert("İsim boş bırakılamaz");
+            return false;
         }
 
-        function mailKontrol(frm){
-            var email=frm.email.value;
-            var atpos=email.indexof("@");
-            var dotpos=email.lastindexof(".");
-
-            if(atpos<1 || dotpos<atpos+2 ||dotpos+2 >=email.lenght){
-                alert("Geçerli bir e-mail adresi giriniz!");
-                return false;
-            }return true;
+        var x = document.forms["Form"]["surname"].value;
+        if (x == "") 
+        {
+            alert("Soyisim boş bırakılamaz");
+            return false;
         }
 
-    </script>
+        var y = document.forms["Form"]["email"].value;
+        if (y == "") 
+        {
+            alert("Mail Kısmı Boş bırakılamaz");
+            return false;
+        }
+
+        var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
+        if (forMail.test(y) == false) 
+        {
+            alert("Geçersiz Mail Adresi!!!");
+            return false;
+        }
+
+
+    }	
+
+</script>	
 
     <!---iletişim KISMI bitiş--->
 
